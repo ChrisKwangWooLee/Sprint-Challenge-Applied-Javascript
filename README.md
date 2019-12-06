@@ -56,10 +56,10 @@ A component is a part of a whole. In our case, a component is a portion of our w
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [v] Fork the project into your GitHub user account
+* [v] Clone the forked project into a directory on your machine
+* [v] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [v] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
@@ -77,9 +77,9 @@ Your finished project must include all of the following requirements:
 
 Your stretch challenge is to write the functionality of a `Carousel` component. This is an advanced challenge, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
 
-* [ ] Complete the carousel functionality in `Carousel.js`
+* [v] Complete the carousel functionality in `Carousel.js`
 
-* [ ] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
+* [v] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
 
 * [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 

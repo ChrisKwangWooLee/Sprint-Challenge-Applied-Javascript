@@ -3,7 +3,8 @@
   .flex(center, center);
   height: 500px;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
+  object-fit: cover;
   margin-top: 16px;
   @media(min-width: 1200px){
     width: 1200px;
@@ -36,12 +37,6 @@
   }
   img {
     .width-100();
-    display: none;
-  }
-  .toggle-on {
-    display: block;
-  }
-  .toggle-off {
     display: none;
   }
 }

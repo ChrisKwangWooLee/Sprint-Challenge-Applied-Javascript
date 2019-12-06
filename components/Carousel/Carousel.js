@@ -77,6 +77,37 @@ carouselContainer.appendChild(carouselCreator());
 const leftButton = document.querySelector('.left-button');
 const rightButton = document.querySelector('.right-button');
 
+leftButton.addEventListener('click', event => {
+  let images = document.querySelectorAll('.img');  // images is an array-like object of images
+  images.forEach(image => {
+    // updating the order of images in an infinite loop
+    if (image.classList.contains('toggle-off-1')) {
+      image.classList.remove('toggle-off-1');
+      image.classList.add('toggle-off-4');
+    } else if (image.classList.contains('toggle-on-left-2')){
+      image.classList.remove('toggle-on-left-2');
+      image.classList.add('toggle-off-1');
+    } else if (image.classList.contains('toggle-on-right-3')) {
+      image.classList.remove('toggle-on-right-3');
+      image.classList.add('toggle-on-left-2');
+    } else if (image.classList.contains('toggle-off-4')) {
+      image.classList.remove('toggle-off-4');
+      image.classList.add('toggle-on-right-3');
+    } 
+
+    // Change display
+    if (image.classList.contains('toggle-on-left-2')) {
+      image.style.display = 'block';
+    } else if (image.classList.contains('toggle-on-right-3')) {
+      image.style.display = 'block';
+    } else if (image.classList.contains('toggle-off-4')) {
+      image.style.display = 'none';
+    } else if (image.classList.contains('toggle-off-1')) {
+      image.style.display = 'none';
+    }
+  })
+})
+
 rightButton.addEventListener('click', event => {
   let images = document.querySelectorAll('.img');  // images is an array-like object of images
   images.forEach(image => {
@@ -106,35 +137,7 @@ rightButton.addEventListener('click', event => {
       image.style.display = 'none';
     }
   })
-})
-
-leftButton.addEventListener('click', event => {
-  let images = document.querySelectorAll('.img');  // images is an array-like object of images
-  images.forEach(image => {
-    // updating the order of images in an infinite loop
-    if (image.classList.contains('toggle-off-4')) {
-      image.classList.remove('toggle-off-4');
-      image.classList.add('toggle-off-1');
-    } else if (image.classList.contains('toggle-off-1')){
-      image.classList.remove('toggle-off-1');
-      image.classList.add('toggle-on-left-2');
-    } else if (image.classList.contains('toggle-on-left-2')) {
-      image.classList.remove('toggle-on-left-2');
-      image.classList.add('toggle-on-right-3');
-    } else if (image.classList.contains('toggle-on-right-3')) {
-      image.classList.remove('toggle-on-right-3');
-      image.classList.add('toggle-off-4');
-    } 
-
-    // Change display
-    if (image.classList.contains('toggle-on-left-2')) {
-      image.style.display = 'block';
-    } else if (image.classList.contains('toggle-on-right-3')) {
-      image.style.display = 'block';
-    } else if (image.classList.contains('toggle-off-4')) {
-      image.style.display = 'none';
-    } else if (image.classList.contains('toggle-off-1')) {
-      image.style.display = 'none';
-    }
-  })
+  
+  leftImage = document.querySelector('.toggle-on-left');
+  console.log(images);
 })

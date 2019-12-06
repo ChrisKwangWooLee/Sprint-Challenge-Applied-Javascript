@@ -267,7 +267,7 @@ body {
   flex-direction: row;
   height: 500px;
   position: relative;
-  overflow: hidden;
+  object-fit: cover;
   margin-top: 16px;
 }
 @media (min-width: 1200px) {
@@ -308,11 +308,5 @@ body {
 }
 .carousel img {
   width: 100%;
-  display: none;
-}
-.carousel .toggle-on {
-  display: block;
-}
-.carousel .toggle-off {
   display: none;
 }
