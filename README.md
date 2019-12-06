@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+Document Object Model (DOM) is a bridge between HTML/CSS and JS. It's an object representing HTML elements in a tree like structure. Manipulating the DOM allows developers to create dynamic website, where users can actively interact with the webpage.
+
 2. What is an event?
+
+Every user interaction with the webpage is an event: click, scroll, and key-press. Appropriately dealing with events allow webpage to be dynamic.
 
 3. What is an event listener?
 
+Event listeners await for an event to occur and trigger subsequent actions. JS built-in method '.addEventListener()' takes in two parameters: an event-type and a callback function. This method allows us to create a property on the DOM node to handle events. On the other hand, '.onclick' makes an inline attribute to the HTML to handle events. Both methods are valid, but addEventListener() is a preferred way in the modern web development because only one event can be attached to a DOM element using inline attribute. '.addEventListener()' allows us to handle mutliple events.
+
 4. Why would we convert a NodeList into an Array?
 
+NodList is an array-like object that's returned when we use 'querySelectorAll()' to select multiple elements. NodeList allows forEach() array method but does not allow any other array methods (ex. .map(), .sort(), etc.). 'Array.from(nodeListName)' allows us to convert array-like object into an actually array. This allows us to use array methods. 
+
 5. What is a component?
+
+A component is a part of a whole. In our case, a component is a portion of our webpage made up of HTML elements, CSS ,and JS. An advantage of using a component is that it allows us to reuse code to create elements with a similar funcionality. Inside a component constructor function, we... 
+
+1) create element 
+2) add class 
+3) add contents and attributes 
+4) append 
+5) add event listeners.
 
 ### Git Set up
 
@@ -49,13 +65,13 @@ Edit this document to include your answers after each question. Make sure to lea
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+* [v] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [v] Following the instructions in the `Header/index.js` file, create the Header component. 
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [v] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [v] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 
