@@ -21,7 +21,6 @@
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .then(response => {
     const categoriesObj = response.data.articles;
-    console.log(categoriesObj);
 
     for (category in categoriesObj) {
         categoriesObj[category].forEach(articleObj => {

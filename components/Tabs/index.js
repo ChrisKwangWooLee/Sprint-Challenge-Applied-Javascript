@@ -21,7 +21,6 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
         topics.appendChild(newTab);
 
         // add event listener to each tabs to toggle cards that are of that category (ex. javascript on click shows cards with javascript class)
-        console.log(newTab);
         newTab.addEventListener('mouseenter', event => {
             event.target.style.background = 'grey';
         })
@@ -32,16 +31,14 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
             const allCards = document.querySelectorAll('.card');
             allCardsArr = Array.from(allCards);
 
-            console.log(allCardsArr[0].classList)
+            console.log(`"${event.target.textContent}" was clicked!`)
             allCardsArr.forEach(card => {
                 const cardClassListArr = Array.from(card.classList);
-                // console.log(cardClassListArr[1]);
 
                 if (cardClassListArr[1] === 'node') {
                     cardClassListArr[1] = 'node.js';
                 }
                 
-                console.log(event.target.textContent);
                 if (cardClassListArr[1] === event.target.textContent) {
                     // reset toggle status by removing toggle-on and toggle-off classes
                     card.classList.remove('toggle-on');
