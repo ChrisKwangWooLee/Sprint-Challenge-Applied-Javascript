@@ -30,40 +30,56 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+Document Object Model (DOM) is a bridge between HTML/CSS and JS. It's an object representing HTML elements in a tree like structure. Manipulating the DOM allows developers to create dynamic website, where users can actively interact with the webpage.
+
 2. What is an event?
+
+Every user interaction with the webpage is an event: click, scroll, and key-press. Appropriately dealing with events allow webpage to be dynamic.
 
 3. What is an event listener?
 
+Event listeners await for an event to occur and trigger subsequent actions. JS built-in method '.addEventListener()' takes in two parameters: an event-type and a callback function. This method allows us to create a property on the DOM node to handle events. On the other hand, '.onclick' makes an inline attribute to the HTML to handle events. Both methods are valid, but addEventListener() is a preferred way in the modern web development because only one event can be attached to a DOM element using inline attribute. '.addEventListener()' allows us to handle mutliple events.
+
 4. Why would we convert a NodeList into an Array?
+
+NodList is an array-like object that's returned when we use 'querySelectorAll()' to select multiple elements. NodeList allows forEach() array method but does not allow any other array methods (ex. .map(), .sort(), etc.). 'Array.from(nodeListName)' allows us to convert array-like object into an actually array. This allows us to use array methods. 
 
 5. What is a component?
 
+A component is a part of a whole. In our case, a component is a portion of our webpage made up of HTML elements, CSS ,and JS. An advantage of using a component is that it allows us to reuse code to create elements with a similar funcionality. Inside a component constructor function, we... 
+
+1) create element 
+2) add class 
+3) add contents and attributes 
+4) append 
+5) add event listeners.
+
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [v] Fork the project into your GitHub user account
+* [v] Clone the forked project into a directory on your machine
+* [v] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [v] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+* [v] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [v] Following the instructions in the `Header/index.js` file, create the Header component. 
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [v] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [v] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 
 Your stretch challenge is to write the functionality of a `Carousel` component. This is an advanced challenge, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
 
-* [ ] Complete the carousel functionality in `Carousel.js`
+* [v] Complete the carousel functionality in `Carousel.js`
 
-* [ ] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
+* [v] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
 
 * [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 
